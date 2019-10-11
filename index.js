@@ -1,4 +1,5 @@
 import React from 'react';
+import { Surface } from 'react-360-web';
 import {
   AppRegistry,
   StyleSheet,
@@ -6,13 +7,19 @@ import {
   View,
 } from 'react-360';
 
+const myFlatSurface = new Surface(
+  300, /* width */
+  600, /* height */
+  Surface.SurfaceShape.Flat /* shape */
+);
+
 export default class Hello360 extends React.Component {
   render() {
     return (
-      <View style={styles.panel}>
-        <View style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            Welcome to React 360
+      <View>
+        <View>
+          <Text>
+            Kellee
           </Text>
         </View>
       </View>
